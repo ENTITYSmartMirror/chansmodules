@@ -115,9 +115,7 @@ resume: function() { //function called when module is displayed again
 },
 
 notificationReceived: function(notification, payload) {
-	if(notification === "DOM_OBJECTS_CREATED"){
-		this.hide()
-	}
+	
 	if (notification === "USER_PRESENCE") { // notification sent by the module MMM-PIR-Sensor or others
 		
 		if(this.config.logDebug){
